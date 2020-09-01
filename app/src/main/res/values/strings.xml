@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Barra Tem</string>
+    <string name="LogotipoBarraTem">Logotipo Barra Tem</string>
+    <string name="BotaoPesquisar">Pesquisar</string>
+    <string name="textempresa">TextView</string>
+    <string name="textendereco">TextView</string>
+    <string name="textemail">TextView</string>
+    <string name="texttelefone">TextView</string>
+    <string name="textcomplemento">TextView</string>
+    <string name="cidade">Barra do Piraí</string>
+    <string name="contato">Contato</string>
+    <string name="TítuloContato">Contato</string>
+    <string name="DescriçãoLogo">Logotipo do site Barra Tem</string>
+    <string name="pesquisa">O que você procura?</string>
+    <string name="cadastroanunciante">CADASTRO</string>
+    <string name="campoAnunciante">Anunciante</string>
+    <string name="campoEndereco">Endereço</string>
+    <string name="campoNumero">nº</string>
+    <string name="campoDescricao">Descrição do anúncio</string>
+    <string name="campoBairro">Bairro</string>
+    <string name="campoCep">CEP</string>
+    <string name="cadastroContato">CONTATO</string>
+    <string name="campoTelefone">Telefone 1</string>
+    <string name="campoTelefone2">Telefone 2</string>
+    <string name="campoEmail">E-mail</string>
+    <string name="campoWebsite">https://</string>
+    <string name="todo">TODO</string>
+    <string name="campoFacebook">Facebook</string>
+    <string name="campoInstagram">Instagram</string>
+    <string name="imagem_instagram">imagem Instagram</string>
+    <string name="imagem_facebook">imagem Facebook</string>
+</resources>
