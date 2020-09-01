@@ -37,7 +37,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -70,9 +69,9 @@ public class MainActivity  extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
 
         // PEGANDO DATA DO SISTEMA PARA ARMAZENAR NO PRÉ CADASTRO
-        SimpleDateFormat time_formatter = new SimpleDateFormat("dd-MM-yyyy_HH:mm");
-        String current_time_str = time_formatter.format(System.currentTimeMillis());
-        Log.i("tempo", "current_time_str:" + current_time_str);
+//        SimpleDateFormat time_formatter = new SimpleDateFormat("dd-MM-yyyy_HH:mm");
+//        String current_time_str = time_formatter.format(System.currentTimeMillis());
+//        Log.i("tempo", "current_time_str:" + current_time_str);
 
         Button botaoPesquisar = findViewById(R.id.botaoPesquisar);
         pesquisa = findViewById(R.id.textPesquisa);
