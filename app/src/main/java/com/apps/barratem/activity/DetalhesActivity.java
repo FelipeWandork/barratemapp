@@ -29,9 +29,6 @@ public class DetalhesActivity extends AppCompatActivity implements OnMapReadyCal
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalhes);
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
 
         TextView textEmpresa = findViewById(R.id.textViewEmpresa);
         TextView textDescricao = findViewById(R.id.textViewDescricao);
@@ -46,9 +43,15 @@ public class DetalhesActivity extends AppCompatActivity implements OnMapReadyCal
 
         Anuncio anuncioAtual = (Anuncio) getIntent().getSerializableExtra("anuncioSelecionado");
 
-        latitude = Double.valueOf(anuncioAtual.getLatitude());
+        latitude  = Double.valueOf(anuncioAtual.getLatitude());
         longitude = Double.valueOf(anuncioAtual.getLongitude());
         markerLocal = anuncioAtual.getEmpresa();
+
+
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
 
         // Formatar TELEFONES, CELULARES, ENDEREÇO
 
