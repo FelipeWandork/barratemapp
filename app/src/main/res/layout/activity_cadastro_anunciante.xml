@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:contentDescription="@string/todo"
@@ -21,14 +21,14 @@
 
     <EditText
         android:id="@+id/textTelefone2"
-        android:layout_width="110dp"
+        android:layout_width="105dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/campoTelefone"
         android:inputType="phone"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toStartOf="@+id/whatsappTelefone2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -59,13 +59,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/campoAnunciante"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:textSize="14sp"
+        android:textSize="13sp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -78,8 +79,8 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/campoNumero"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
+        android:inputType="number"
+        android:textSize="13sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textEndereco"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -93,7 +94,7 @@
         android:ems="10"
         android:hint="@string/campoEndereco"
         android:inputType="textPersonName"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toStartOf="@+id/textNumero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDescricao" />
@@ -111,7 +112,7 @@
         android:hint="@string/campoDescricao"
         android:inputType="textMultiLine"
         android:maxLength="255"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textAnunciante" />
@@ -126,7 +127,7 @@
         android:ems="10"
         android:hint="@string/campoBairro"
         android:inputType="textPersonName"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toStartOf="@+id/textCep"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEndereco" />
@@ -147,7 +148,7 @@
 
     <EditText
         android:id="@+id/textTelefone1"
-        android:layout_width="110dp"
+        android:layout_width="105dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -155,7 +156,7 @@
         android:ems="10"
         android:hint="@string/campoTelefone"
         android:inputType="phone"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -167,8 +168,8 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/campoCep"
-        android:inputType="textPostalAddress"
-        android:textSize="14sp"
+        android:inputType="number"
+        android:textSize="13sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textBairro"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -182,8 +183,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginTop="12dp"
         android:contentDescription="@string/todo"
         app:layout_constraintStart_toEndOf="@+id/whatsappTelefone1"
@@ -201,10 +202,10 @@
         android:ems="10"
         android:hint="@string/campoWebsite"
         android:inputType="textPersonName"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail"/>
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <EditText
         android:id="@+id/textEmail"
@@ -217,7 +218,7 @@
         android:ems="10"
         android:hint="@string/campoEmail"
         android:inputType="textEmailAddress"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTelefone1" />
@@ -233,7 +234,7 @@
         android:ems="10"
         android:hint="@string/campoInstagram"
         android:inputType="textPersonName"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/textFacebook" />
@@ -249,7 +250,7 @@
         android:ems="10"
         android:hint="@string/campoFacebook"
         android:inputType="textPersonName"
-        android:textSize="14sp"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textWebsite" />
@@ -260,6 +261,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="12dp"
         android:contentDescription="@string/imagem_facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/textFacebook"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textFacebook"
         app:srcCompat="@drawable/iconefacebook" />
@@ -270,6 +272,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="12dp"
         android:contentDescription="@string/imagem_instagram"
+        app:layout_constraintBottom_toBottomOf="@+id/textInstagram"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textInstagram"
         app:srcCompat="@drawable/iconeinstagram" />

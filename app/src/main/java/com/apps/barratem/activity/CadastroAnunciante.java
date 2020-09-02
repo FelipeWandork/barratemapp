@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.apps.barratem.R;
 import com.apps.barratem.helper.CadastroDAO;
+import com.apps.barratem.helper.Mask;
 import com.apps.barratem.helper.Singleton;
 import com.apps.barratem.model.Cadastro;
 import com.google.android.material.switchmaterial.SwitchMaterial;
@@ -35,6 +37,8 @@ public class CadastroAnunciante extends AppCompatActivity {
     private TextView facebook;
     private TextView instagram;
 
+
+
     CadastroDAO cadastroDAO = new CadastroDAO();
     Cadastro cadastro = new Cadastro();
 
@@ -42,19 +46,7 @@ public class CadastroAnunciante extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_anunciante);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.menu_cadastrar, menu);
-        return super.onCreateOptionsMenu(menu);
-
-    }
-
-    @SuppressLint("WrongViewCast")
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         anunciante = findViewById(R.id.textAnunciante);
         descricao = findViewById(R.id.textDescricao);
         endereco = findViewById(R.id.textEndereco);
@@ -69,6 +61,28 @@ public class CadastroAnunciante extends AppCompatActivity {
         website = findViewById(R.id.textWebsite);
         facebook = findViewById(R.id.textFacebook);
         instagram = findViewById(R.id.textInstagram);
+
+        cep.addTextChangedListener(Mask.insert(Mask.CEP_MASK, (EditText) cep));
+        telefone1.addTextChangedListener(Mask.insert(Mask.CELULAR_MASK, (EditText) telefone1));
+        telefone2.addTextChangedListener(Mask.insert(Mask.CELULAR_MASK, (EditText) telefone2));
+        numero.addTextChangedListener(Mask.insert(Mask.NUMERO_MASK, (EditText) numero));
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_cadastrar, menu);
+        return super.onCreateOptionsMenu(menu);
+
+    }
+
+    @SuppressLint("WrongViewCast")
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+
+
 
         cadastro.setAnunciante(anunciante.getText().toString());
         cadastro.setDescricao(descricao.getText().toString());
